@@ -1,3 +1,8 @@
+.top{
+    display: flex;
+    flex-direction: column;
+}
+
 input{
     width: 80%;
     border-top: none;
@@ -18,7 +23,7 @@ input{
     box-shadow: 0 0 5px 2px rgb(116, 115, 115);
 }
 
-.structure .placer{
+.placer{
     width: 100%;
     flex-direction: row;
 }
@@ -39,3 +44,39 @@ input{
     background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
+.submitBox{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+.notShow{
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
+button{
+    width: 50px;
+    height: 80px;
+}
+
+@media(max-width: 375px){
+    .structure{
+        width: 100%;
+    }
+
+    .placer{
+        width: 80%;
+    }
+
+}
